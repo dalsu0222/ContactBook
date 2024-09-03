@@ -198,11 +198,22 @@ function App() {
             setSearchTerm={setSearchTerm}
             onSearch={handleSearch}
           />
-          <ul className="listCon">
-            {filteredList.map((item) => (
-              <List key={item.id} item={item} deleteItem={deleteItem} />
-            ))}
-          </ul>
+          {contactList.length > 0 ? (
+            <ul className="listCon">
+              {filteredList.map((item) => (
+                <List key={item.id} item={item} deleteItem={deleteItem} />
+              ))}{" "}
+            </ul>
+          ) : (
+            <div className="noContactList">
+              <div className="icon-container">
+                <i className="fa-regular fa-address-book"></i>
+              </div>
+
+              <p>저장된 연락처가 없습니다.</p>
+              <p>연락처를 등록해보세요!</p>
+            </div>
+          )}
         </section>
       </main>
     </>

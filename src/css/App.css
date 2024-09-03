@@ -60,6 +60,50 @@
   gap: 1rem;
 }
 
+/* App.jsx noList 부분 */
+
+.noContactList {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #ccc;
+  position: relative;
+}
+
+.noContactList i {
+  font-size: 60px;
+}
+
+.icon-container {
+  margin: 3rem 0;
+  position: relative;
+  display: inline-block;
+  font-size: 24px; /* 아이콘의 크기에 맞게 조정 */
+}
+
+.icon-container::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6rem; /* 원의 크기 조정 */
+  height: 6rem;
+  border-radius: 50%;
+  border: 3px solid #ccc; /* 회색의 동그라미 테두리 */
+  transform: translate(-50%, -50%);
+}
+
+.icon-container::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 6rem; /* 사선의 두께 조정 */
+  height: 2px;
+  background: #ccc; /* 사선 색상 */
+  transform: translate(-50%, -50%) rotate(-45deg); /* 사선 위치와 방향 조정 */
+}
+
 /* InputEl */
 .inputEl input,
 #group {
