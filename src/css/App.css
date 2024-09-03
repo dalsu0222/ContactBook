@@ -20,7 +20,7 @@
   margin: 2rem 0;
 }
 .inputCon {
-  min-width: 400px;
+  min-width: 340px;
   width: 35%;
   height: max-content;
   padding: 2rem;
@@ -53,6 +53,7 @@
 
 .ListArea {
   width: 50%;
+  min-width: 350px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -136,4 +137,35 @@
   border-radius: 4px;
   background-color: #f2f2f2;
   border: 1px solid #ccc;
+}
+
+@media (max-width: 960px) {
+  .main {
+    flex-direction: column;
+  }
+  .inputCon {
+    width: 90%;
+  }
+  .ListArea {
+    width: 90%;
+  }
+}
+@media (max-width: 768px) {
+  .main {
+    width: 90%;
+  }
+  .inputCon {
+    width: 90%;
+  }
+  .ListArea {
+    width: 90%;
+  }
+}
+@media (max-width: 500px) {
+  .inputCon {
+    width: 100%;
+  }
+  .ListArea {
+    width: 100%;
+  }
 }
