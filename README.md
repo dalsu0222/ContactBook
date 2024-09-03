@@ -1,6 +1,7 @@
 <details>
 <summary>📑 해야 할 일 (To-Do)</summary>
 
+- [ ] 저장된 연락처가 없을때 지정된 화면으로 대체
 - [ ] 상태관리 라이브러리 적용(redux 또는 recoil) -> 공부도 같이...
 - [ ] mongoDB 연결
 
